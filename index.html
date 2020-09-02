@@ -1,0 +1,2262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Marshmallow Bootstrap Admin Dashboard Template</title>
+	<link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="vendors/owl.carousel/css/owl.carousel.css">
+	<link rel="stylesheet" href="vendors/owl.carousel/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="vendors/aos/css/aos.css">
+	<link rel="stylesheet" href="vendors/jquery-flipster/css/jquery.flipster.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.png" />
+	<style>
+		section {
+			width: 21cm;
+			min-height: 29.7cm;
+			padding: 2cm;
+			margin: 1cm auto;
+			border: 1px #D3D3D3 solid;
+			border-radius: 5px;
+			background: white;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
+
+		@page {
+			size: A4;
+			margin: 0;
+		}
+
+		@media print {
+			.page {
+				margin: 0;
+				border: initial;
+				border-radius: initial;
+				width: initial;
+				min-height: initial;
+				box-shadow: initial;
+				background: initial;
+				page-break-after: always;
+			}
+		}
+	</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div id="mobile-menu-overlay"></div>
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Marshmallow"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+				aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"><i class="mdi mdi-menu"> </i></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<div class="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center">
+					<img src="images/logo-dark.svg" class="logo-mobile-menu" alt="logo">
+					<a href="javascript:;" class="close-menu"><i class="mdi mdi-close"></i></a>
+				</div>
+				<ul class="navbar-nav ml-auto align-items-center">
+					<li class="nav-item active">
+						<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-success" href="#contact">174-394-9560</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-success" href="#myform1">myform</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-success" href="#myform2">myform</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-success" href="#myform3">myform</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-success" href="#myform4">myform</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-success" href="#myform5">myform</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-success" href="#myform6">myform</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="page-body-wrapper" id="mainformid">
+		<section class="contactus" id="contact">
+			<div class="container">
+				<div class="row mb-5 pb-5">
+					<div class="col-sm-5" data-aos="fade-up" data-aos-offset="-500">
+						<img src="images/contact.jpg" alt="contact" class="img-fluid">
+					</div>
+					<div class="col-sm-7" data-aos="fade-up" data-aos-offset="-500">
+						<h3 class="font-weight-medium text-dark mt-5 mt-lg-0">Manrega</h3>
+						<h5 class="text-dark mb-5">Basic Form</h5>
+						<form>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="date" class="form-control" id="name" placeholder="ઇનવર્ડ તારીખ*"
+											v-model="inwarddate">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="name"
+											placeholder="ગ્રામ પંચાયત નું નામ*" v-model="panchayatname">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="name" placeholder="અરજદાર નું નામ*"
+											v-model="applicantname">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="number" class="form-control" id="name" placeholder="મોબઈલ નબર*"
+											v-model="mobileno">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="name"
+											placeholder="ક્યાં પ્રકારના અરજદાર છો*" v-model="applicanttype">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										જમીનની વિગત
+										<input type="text" class="form-control" id="name" placeholder="ખાતા નબર*"
+											v-model="accoutno">
+										<input type="text" class="form-control" id="name" placeholder="સર્વે નબર*"
+											v-model="serveno">
+										<input type="text" class="form-control" id="name" placeholder="ક્ષેત્રફળ*"
+											v-model="area">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="number" class="form-control" id="name"
+											placeholder="આધાર કાર્ડ નબર*" v-model="adhar">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="number" class="form-control" id="name" placeholder="બેંક ખાતા નબર*"
+											v-model="bankaccountno">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="name" placeholder="બેંક નું નામ*"
+											v-model="bankname">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="name" placeholder="ઇએફએસસી કોડ*"
+											v-model="efcccode">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<a href="#" class="btn btn-secondary">SEND</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="printdiv">
+			<section class="myform" id="myform1">
+				<div class="container">
+					<div class="row mb-5 pb-5">
+						<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="color: #000000;"><u><span style="font-family: Shruti;"><span
+													style="font-size: large;"><span lang="gu-IN"><strong>મહાત્માં ગાંધી
+															રાષ્ટ્રીય</strong></span></span></span></u></span><span
+										style="color: #000000;"><u><span style="font-family: Shruti;"><span
+													style="font-size: large;"><span lang="gu-IN"><strong>ગ્રામીણ રોજગારી
+															બાહેંધરી
+															અધિનિયમ</strong></span></span></span></u></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: large;"><u><strong>-</strong></u></span></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span style="font-size: large;"><span
+													lang="gu-IN"><strong>૨૦૦૫</strong></span></span></span></span></span></span>
+						</p>
+						<p align="center"><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><strong>-</strong></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><strong>::
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="color: #000000;"><span style="font-family: Shruti;"><span
+												lang="gu-IN"><strong>વ્યક્તિગત બાગાયત
+												</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><strong>/</strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>કુવા રીચાર્જ
+												</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><strong>/ </strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-family: Shruti;"><span
+											lang="gu-IN"><strong>ખેત તલાવડી </strong></span></span></span></span><span
+								style="font-family: Calibri, serif;"><strong>/ </strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-family: Shruti;"><span
+											lang="gu-IN"><strong>વર્મી કમ્પોસ્ટ
+											</strong></span></span></span></span><span
+								style="font-family: Calibri, serif;"><strong>/ </strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-family: Shruti;"><span
+											lang="gu-IN"><strong>નાપેડ</strong></span></span></span></span><span
+								style="font-family: Calibri, serif;"><strong>/</strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-family: Shruti;"><span
+											lang="gu-IN"><strong>કમ્પોસ્ટ પિટના કામનું અરજી
+												પત્રક</strong></span></span></span></span><span
+								style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><strong>::</strong></span></span><span
+								style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><strong>-</strong></span></span></p>
+						<p align="center"><span style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>(</strong></span></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>જો વ્યક્તિગત બાગાયત
+														માટે અરજી કરી હોય તો કોઈ પણ બે ફળાવ અને ઈમારીતી લાકડાના
+														રોપાના</strong></span></span></span></span></span><span
+									style="color: #000000;"><span style="font-family: Shruti;"><span
+											style="font-size: small;"><span lang="gu-IN"><strong>નામ લખવા
+												</strong></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>(</strong></span></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>આંબા</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>,</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-size: small;"><span
+												lang="gu-IN"><strong>ચી</strong></span></span></span><span
+										style="color: #000000;"><span style="font-family: Shruti;"><span
+												style="font-size: small;"><span
+													lang="gu-IN"><strong>કુ</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>,</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>જામફળ</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>,</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>સીતાફળ</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>,</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>નારિયેળ</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>,</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>સરગવો</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>,</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>આંબળા અથવા
+														સાગ</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>,</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>નીલગીરી</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>,</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>આશો</strong></span></span></span></span><span
+										style="color: #000000;"><span style="font-family: Shruti;"><span
+												style="font-size: small;"><span
+													lang="gu-IN"><strong>પાલવ</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>, </strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>મલબાર
+														નીમ</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>(</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>૧</strong></span></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>)</strong></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>. . . . . . .
+										</strong></span></span></span><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>(</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>૨</strong></span></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span style="font-size: small;"><strong>). . . . ..
+										.
+										)</strong></span></span></p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>પ્રતિ
+														શ્રી</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>, <br /></strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>તાલુકા વિકાસ
+														અધિકારીશ્રી</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong><br /></strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>તાલુકા પંચાયત
+														કચેરી</strong></span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong><br /></strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>કાલાવડ</strong></span></span></span></span></span></span>
+						</p>
+						<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="color: #000000;"><u><span style="font-family: Shruti;"><span
+													lang="gu-IN"><strong>વિષય
+													</strong></span></span></u></span></span></span><span
+								style="font-family: Calibri, serif;"><strong>:-</strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><u><span
+												style="font-family: Shruti;"><span lang="gu-IN"><strong>વ્યક્તિગત કામની
+														અરજી
+														કરવા બાબત</strong></span></span></u></span></span></span></p>
+						<p align="justify"><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><strong>(</strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span
+												lang="gu-IN"><strong>૧</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>) </strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>અરજદારનું નામ
+												</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>:- {{applicantname}}
+										.</strong></span></span></p>
+						<p align="justify"><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><strong>(</strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span
+												lang="gu-IN"><strong>૨</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>) </strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>ગામનું નામ
+												</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>:- . . . . . . . . . . . . . . . . . .
+										. .
+										. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+									</strong></span></span></p>
+						<p align="justify"><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><strong>(</strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span
+												lang="gu-IN"><strong>૩</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>) </strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>તાલુકો જીલ્લો
+												</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>:- . . . . . . . . . . . . . . . . . .
+										. .
+										. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+										.</strong></span></span></p>
+						<p align="justify"><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><strong>(</strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span
+												lang="gu-IN"><strong>૪</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>) </strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>જોબકાર્ડ નબર
+												</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>:- . . . . . . . . . . . . . . . . . .
+										. .
+										. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+										.</strong></span></span></p>
+						<p align="justify"><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><strong>(</strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span
+												lang="gu-IN"><strong>૫</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>) </strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>બેંક નું નામ
+												</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>:- {{bankname}} </strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>બેંક ખાતા નબર
+												</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>:-{{bankaccountno}}</strong></span></span>
+						</p>
+						<p><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><strong>(</strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span
+												lang="gu-IN"><strong>૬</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>) </strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>જમીનની વિગત
+													૮</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>-</strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>અ મુજબ
+												</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>:- </strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>ખાતા
+													નબર</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>- . . . . . . . . .
+									</strong></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>સર્વે નબર
+												</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>:- . . . . . . . </strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span
+												lang="gu-IN"><strong>ક્ષેત્રફળ</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>:- . . . . . . . .
+										.</strong></span></span>
+						</p>
+						<p><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><strong>(</strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span
+												lang="gu-IN"><strong>૭</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><strong>) </strong></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>ક્યાં પ્રકારના
+													અરજદાર</strong></span></span></span></span><span
+									style="color: #000000;"><span style="font-family: Shruti;"><span
+											lang="gu-IN"><strong>તરીકે અરજી કરો છો
+											</strong></span></span></span></span><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><strong>? ( </strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>ટીક માર્ક કરવું
+												</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><strong>) </strong></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>(</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>૧</strong></span></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span style="font-size: small;"><strong>)
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-family: Shruti;"><span style="font-size: small;"><span
+												lang="gu-IN"><strong>નાના ખેડૂત
+												</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>(</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-family: Shruti;"><span
+											style="font-size: small;"><span lang="gu-IN"><strong>હેક્ટર
+													૨</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>-</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-family: Shruti;"><span
+											style="font-size: small;"><span
+												lang="gu-IN"><strong>૦૦</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>-</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-family: Shruti;"><span
+											style="font-size: small;"><span
+												lang="gu-IN"><strong>૦૦</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>)</strong></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong> (</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>૨</strong></span></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span style="font-size: small;"><strong>)
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-family: Shruti;"><span style="font-size: small;"><span
+												lang="gu-IN"><strong>અનુસુચિત
+													જતી</strong></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>(</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>૩</strong></span></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span style="font-size: small;"><strong>)
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-family: Shruti;"><span style="font-size: small;"><span
+												lang="gu-IN"><strong>અનુસુચિત જન
+													જાતિ</strong></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>(</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>૪</strong></span></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span style="font-size: small;"><strong>)
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-family: Shruti;"><span style="font-size: small;"><span
+												lang="gu-IN"><strong>બી</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>.</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-family: Shruti;"><span
+											style="font-size: small;"><span
+												lang="gu-IN"><strong>પી</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>.</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-family: Shruti;"><span
+											style="font-size: small;"><span
+												lang="gu-IN"><strong>એલ</strong></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>(</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>૫</strong></span></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span style="font-size: small;"><strong>)
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-family: Shruti;"><span style="font-size: small;"><span
+												lang="gu-IN"><strong>મહિલા વિધવા
+													ખાતેદાર</strong></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>(</strong></span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN"><strong>૬</strong></span></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span style="font-size: small;"><strong>)
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-family: Shruti;"><span style="font-size: small;"><span
+												lang="gu-IN"><strong>વિકલાંગ
+													ખાતેદાર</strong></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>(</strong></span></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-size: small;"><span lang="gu-IN"><strong>દાખલો જોડવો
+												</strong></span></span></span></span><span
+									style="font-family: Calibri, serif;"><span
+										style="font-size: small;"><strong>)</strong></span></span></span></p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="color: #000000;"><span style="font-family: Shruti;"><span
+												lang="gu-IN">મેં
+												અગાઉ ખાનગી રીતે</span></span></span><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span lang="gu-IN">કે સરકારી યોજના હેઠળ ઉપર
+												માંગણી
+												મુજબનો લાભ લીધેલ નથી મહાત્માં ગાંધી રાષ્ટ્રીય</span></span></span><span
+										style="color: #000000;"><span style="font-family: Shruti;"><span
+												lang="gu-IN">ગ્રામીણ રોજગારી બાહેંધરી યોજના હેઠળ મને લાભ આપવા વિનતી છે
+												હું
+												તેમાં નક્કી થયા</span></span></span><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span lang="gu-IN">મુજબના દીવસમાં કામ પૂર્ણ
+												કરવા
+												સંમત થાઉં છું</span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;">.</span></span></p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>તારીખ
+												</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><strong>:- </strong></span></p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>સ્થળ
+												</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><strong>:- </strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-family: Shruti;"><span
+											lang="gu-IN"><strong>અરજદારની સહી</strong></span></span></span></span></p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span lang="gu-IN"><strong>મોબાઇલ નબર
+												</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><strong>:-{{mobileno}}</strong></span></p>
+						<p>&nbsp;</p>
+						<hr />
+						<p align="justify"><span style="color: #000000;"><span style="font-family: Shruti;"><span
+										lang="ar-SA"><span style="font-family: Shruti;"><span
+												style="font-size: small;"><span
+													lang="gu-IN">અરજદાર</span></span></span></span></span><span
+									style="color: #000000;"><span style="font-family: Shruti;"><span
+											style="font-size: small;"><span
+												lang="gu-IN">શ્રી</span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;">{{applicantname}}
+										.</span></span></span><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><span style="font-size: small;"> .. . . . . .
+									</span></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="color: #000000;"><span style="font-family: Shruti;"><span
+												style="font-size: small;"><span lang="gu-IN">ને અગાઉ નરેગા યોજનામાં આ
+												</span></span></span></span><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN">લાભ લીધેલ નથી અને ગ્રામ સભાના ઠરાવમાં લેવામાં આવેલ છે
+													જે
+												</span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;">. . . . . . .</span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"> . . . . . </span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN">ગામના ખાતેદાર છે જેના જમીન ના
+												</span></span></span></span><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN">ખાતા</span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;">. . . . . . . . </span></span><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN">ના સર્વે નબર
+												</span></span></span></span></span><span
+									style="font-family: Calibri, serif;"><span style="font-size: small;">. . . . .. .
+									</span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN">માં વ્યક્તિગત</span></span></span></span></span><span
+									style="font-family: Calibri, serif;"><span
+										style="font-size: small;">..</span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"> . . . . . . . . .
+										. .. . . . . . . </span></span></span><span style="font-family: Shruti;"><span
+									lang="ar-SA"><span style="color: #000000;"><span style="font-family: Shruti;"><span
+												style="font-size: small;"><span lang="gu-IN">નું કામ કરવા માંગે છે જે
+													નો</span></span></span></span><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN">ગ્રામ સભામાં નામ જોગ ઠરાવ આ અરજી સાથે જોડેલ છે માટે
+													ઉપરોક્ત
+													ખેડૂતના ખેતરે</span></span></span></span><span
+										style="color: #000000;"><span style="font-family: Shruti;"><span
+												style="font-size: small;"><span lang="gu-IN">વ્યક્તિગત
+												</span></span></span></span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;">. . . . . . . . . . . . . .</span></span></span><span
+								style="color: #000000;"><span style="font-family: Calibri, serif;"><span
+										style="font-size: small;"> . </span></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN">નું કામ થઈ સકે તેમ છે તે બદલ આ
+													આ</span></span></span></span><span style="color: #000000;"><span
+											style="font-family: Shruti;"><span style="font-size: small;"><span
+													lang="gu-IN">પ્રમાણ પત્ર આપવામાં આવે
+													છે</span></span></span></span></span></span></p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="color: #000000;"><span style="font-size: small;"><span
+												lang="gu-IN"><strong>સ્થળ
+												</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span style="font-size: small;"><strong>:-
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: small;"><span lang="gu-IN"><strong>સરપંચ
+											</strong></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>(</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: small;"><span
+											lang="gu-IN"><strong>સહી</strong></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>-</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: small;"><span
+											lang="gu-IN"><strong>સિક્કા</strong></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span style="font-size: small;"><strong>)
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: small;"><span lang="gu-IN"><strong>તલાટી કમ મંત્રી
+											</strong></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>(</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: small;"><span
+											lang="gu-IN"><strong>સહી</strong></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>-</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: small;"><span
+											lang="gu-IN"><strong>સિક્કા</strong></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>)</strong></span></span></p>
+						<hr />
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="color: #000000;"><span style="font-family: Shruti;"><span
+												style="font-size: small;"><span lang="gu-IN"><strong>અરજી સાથે નીચે
+														મુજબના
+														સાધનિક કાગળો અરજદારે અરજી સાથે ગ્રામ પંચાયત ક્ક્ષાએ તલાટી કમ
+														મંત્રી
+														ને રજુ કરવાના રેહશે અને તલાટી કમ મંત્રી શ્રી એ અરજી ગ્રામ
+														પંચાયતમાં
+														નોધી તાલુકામાં રજુ કરવાની રેહશે
+													</strong></span></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>(</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-family: Shruti;"><span
+											style="font-size: small;"><span lang="gu-IN"><strong>ગ્રામ સભા ઠરાવ અને
+													ચતુર્થ
+													દિશા ઓનલાઈન અરજી કાર્ય બાદ તલાટી કમ મંત્રી સહી કરી આપશે જેની નોધ
+													લેવી
+												</strong></span></span></span></span></span><span
+								style="font-family: Calibri, serif;"><span
+									style="font-size: small;"><strong>)</strong></span></span></p>
+						<table border="1" cellspacing="0" cellpadding="9">
+							<tbody>
+								<tr style="height: 57.2393px;">
+									<td style="background: transparent; height: 57.2393px;">
+										<p><span style="color: #000000;"><span style="font-family: Arial, serif;"><span
+														style="font-size: small;"><strong>(</strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-family: Shruti;"><span
+																style="font-size: small;"><span
+																	lang="gu-IN"><strong>૧</strong></span></span></span></span></span></span><span
+												style="font-family: Arial, serif;"><span
+													style="font-size: small;"><strong>)
+													</strong></span></span><span style="font-family: Shruti;"><span
+													lang="ar-SA"><span style="font-family: Shruti;"><span
+															style="font-size: small;"><span
+																lang="gu-IN"><strong>કુટુંબના
+																	ફોટા વાળું જોબકાર્ડ અને રેશન
+																	કાર્ડ</strong></span></span></span></span></span><span
+												style="color: #000000;"><span style="font-family: Arial, serif;"><span
+														style="font-size: small;"><strong>,
+														</strong></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 57.2393px;" width="57">&nbsp;</td>
+									<td style="background: transparent; height: 57.2393px;" width="267">
+										<p><span style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: small;"><strong>{</strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-family: Shruti;"><span
+																style="font-size: small;"><span
+																	lang="gu-IN"><strong>૨</strong></span></span></span></span></span></span><span
+												style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: small;"><strong>}
+														</strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-family: Shruti;"><span
+																style="font-size: small;"><span
+																	lang="gu-IN"><strong>જોબકાર્ડમાં</strong></span></span></span></span><span
+														style="color: #000000;"><span style="font-family: Shruti;"><span
+																style="font-size: small;"><span
+																	lang="gu-IN"><strong>સમાવિષ્ઠ તમા સભ્યોના બેંક ખાતા
+																		અને
+																		આધાર કાર્ડની
+																		નકલ</strong></span></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 57.2393px;" width="65">&nbsp;</td>
+									<td style="background: transparent; height: 57.2393px;" width="140">
+										<p><span style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: small;"><strong>{</strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-family: Shruti;"><span
+																style="font-size: small;"><span
+																	lang="gu-IN"><strong>૩</strong></span></span></span></span></span></span><span
+												style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: small;"><strong>}
+														</strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-family: Shruti;"><span
+																style="font-size: small;"><span
+																	lang="gu-IN"><strong>૭</strong></span></span></span></span></span></span><span
+												style="font-family: HARI, serif;"><span
+													style="font-size: small;"><strong>-</strong></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="font-family: Shruti;"><span
+															style="font-size: small;"><span lang="gu-IN"><strong>૧૨ અને
+																	૮</strong></span></span></span></span></span><span
+												style="font-family: HARI, serif;"><span
+													style="font-size: small;"><strong>-</strong></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="font-family: Shruti;"><span
+															style="font-size: small;"><span
+																lang="gu-IN"><strong>અ</strong></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 57.2393px;" width="55">&nbsp;</td>
+								</tr>
+								<tr style="height: 39px;">
+									<td style="background: transparent; height: 39px;" width="169">
+										<p><span style="color: #000000;"><span style="font-family: Arial, serif;"><span
+														style="font-size: small;"><strong>(</strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-family: Shruti;"><span
+																style="font-size: small;"><span
+																	lang="gu-IN"><strong>૪</strong></span></span></span></span></span></span><span
+												style="font-family: Arial, serif;"><span
+													style="font-size: small;"><strong>)
+													</strong></span></span><span style="font-family: Shruti;"><span
+													lang="ar-SA"><span style="font-family: Shruti;"><span
+															style="font-size: small;"><span lang="gu-IN"><strong>ગ્રામ
+																	સભા
+																	ઠરાવ
+																	૨૦</strong></span></span></span></span></span><span
+												style="font-family: Arial, serif;"><span
+													style="font-size: small;"><strong>/</strong></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="font-family: Shruti;"><span
+															style="font-size: small;"><span
+																lang="gu-IN"><strong>૨૧</strong></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 39px;" width="57">&nbsp;</td>
+									<td style="background: transparent; height: 39px;" width="267">
+										<p><span style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: small;"><strong>{</strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-family: Shruti;"><span
+																style="font-size: small;"><span
+																	lang="gu-IN"><strong>૫</strong></span></span></span></span></span></span><span
+												style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: small;"><strong>}
+														</strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-family: Shruti;"><span
+																style="font-size: small;"><span
+																	lang="gu-IN"><strong>ચતુર્થ
+																		દિશા અને
+																		નકશો</strong></span></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 39px;" width="65">&nbsp;</td>
+									<td style="background: transparent; height: 39px;" width="140">
+										<p><span style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: small;"><strong>{</strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-family: Shruti;"><span
+																style="font-size: small;"><span
+																	lang="gu-IN"><strong>૬</strong></span></span></span></span></span></span><span
+												style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: small;"><strong>}
+														</strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-family: Shruti;"><span
+																style="font-size: small;"><span
+																	lang="gu-IN"><strong>ખેતર નો
+																		ફોટો</strong></span></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 39px;" width="55">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+			<section class="myform">
+				<div class="container">
+					<div class="row mb-5 pb-5">
+						<p align="center"><br /> </p>
+						<p align="center"><span style="font-family: HARI, serif;"><span
+									style="font-size: large;"><u><strong>-:: </strong></u></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: large;"><span
+											lang="gu-IN"><strong>સ્થળ તપાસનું રોજકામ
+											</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: large;"><strong>::-
+									</strong></span></span></p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN">આજ રોજ તારીખ
+										</span></span></span></span><span style="font-family: HARI, serif;"><span
+									style="font-size: medium;">{{inwarddate}} </span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN">રોજ જામનગર જીલ્લાના કાલાવડ તાલુકાના
+										</span></span></span></span><span style="font-family: HARI, serif;"><span
+									style="font-size: medium;">. . . . . . . . . . </span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN">ગામે એમ</span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;">.</span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN">જી નરેગા યોજના અંતર્ગત વર્ષ
+											૨૦૨૦</span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;">-</span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN">૨૦૨૧ અન્વયે અર્જ્દારી શ્રી </span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;">. . . .. . . . . . .
+									. .
+									. . . . . . . . </span></span><span style="font-family: Shruti;"><span
+									lang="ar-SA"><span style="font-size: medium;"><span lang="gu-IN">દ્વારા
+										</span></span></span></span><span style="font-family: HARI, serif;"><span
+									style="font-size: medium;">. .. . . . . . . . . . . . </span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN">કામની અરજી કરવમાં આવેલ હતી જેના ખાતા નબર
+										</span></span></span></span><span style="font-family: HARI, serif;"><span
+									style="font-size: medium;">. . . . . . </span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN">સર્વે નબર </span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;">. . . . . . . . . . .
+								</span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN">માં
+										</span></span></span></span><span style="font-family: HARI, serif;"><span
+									style="font-size: medium;">. . . . . . . .. . .
+								</span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN">નું કામ કરવા અરજી કરેલ છે જે ની આજ
+											રોજ
+											રૂબર સ્થળ તપાસ માટે આવેલ જે અંતર્ગત સ્થળ તપાસ નીચે મુબ ની જગ્યાની ચકાસણી
+											કરવમાં
+											આવેલ છે </span></span> </span></span></p>
+						<p align="center"><br /> </p>
+						<p align="center">&nbsp;</p>
+						<p><span id="Frame4" dir="ltr"></span><br /> </p>
+						<table>
+							<tbody>
+								<tr>
+									<td style="width: 333.699px;">&nbsp;</td>
+									<td style="width: 320.301px;">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="font-size: large;"><span
+															lang="gu-IN"><strong>ઉતર</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="width: 265px;">&nbsp;</td>
+								</tr>
+								<tr>
+									<td style="width: 333.699px;">
+										<p style="text-align: center;"><span style="font-family: Shruti;"><span
+													lang="ar-SA"><span style="font-size: medium;"><span
+															lang="gu-IN"><strong>&lt;==
+																પશ્ચિમ</strong></span></span></span></span></p>
+									</td>
+									<td style="width: 320.301px;">
+										<p><span lang="ar-SA"><span lang="gu-IN"><strong>અરજી સાથે રજુ કરેલ
+														૮</strong></span></span><strong>-</strong><span
+												lang="ar-SA"><span lang="gu-IN"><strong>અ મુજબ ના સર્વે નબર ની ચતુર્થ
+														દિશા</strong></span></span></p>
+										<p><strong>(</strong><span lang="ar-SA"><span
+													lang="gu-IN"><strong>૧</strong></span></span><strong>)
+											</strong><span lang="ar-SA"><span lang="gu-IN"><strong>ખાતા નબર
+													</strong></span></span><strong>:- </strong></p>
+										<p><strong>(</strong><span lang="ar-SA"><span
+													lang="gu-IN"><strong>૨</strong></span></span><strong>)
+											</strong><span lang="ar-SA"><span lang="gu-IN"><strong>સર્વે નબર
+													</strong></span></span>
+										</p>
+										<p>&nbsp;</p>
+									</td>
+									<td style="width: 265px;">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="font-size: medium;"><span lang="gu-IN"><strong>પૂર્વ
+																==&gt;</strong></span></span></span></span></p>
+									</td>
+								</tr>
+								<tr>
+									<td style="width: 333.699px;">&nbsp;</td>
+									<td style="width: 320.301px;">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="font-size: large;"><span
+															lang="gu-IN"><strong>દક્ષિણ</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="width: 265px;">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<p style="text-align: center;">&nbsp;</p>
+						<p style="text-align: center;" align="justify"><span style="font-family: Shruti;"><span
+									lang="ar-SA"><span style="font-size: medium;"><span lang="gu-IN"><strong>ઉપરોક્ત
+												બાબતની
+												સ્થળ મુલાકાત લઈને અરજદારની હાજરીમાં સ્થળનો ફોટો પડેલ છે તથા અરજદાર
+												દ્વારા
+												કરેલ અરજી મુજબની જગ્યા છે તથા તેમની માલિકીની છે જેમાં
+											</strong></span></span></span></span><span style="color: #000000;"><span
+									style="font-family: Calibri, serif;"><span style="font-size: medium;"><u><strong>. .
+												. .
+												. . . . . . . . . . . . . . </strong></u></span></span></span> <span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>નું કામ કરવા અરજી કરેલ છે જેની ખરાઈ અરજદારે જણાવેલ
+												જગ્યા
+												મુજબ કરેલ છે જે બદલ નીચે સહી કરી આપેલ છે
+											</strong></span></span></span></span></p>
+						<p style="text-align: center;" align="justify"><br /> </p>
+						<p style="text-align: center;" align="justify"><span style="font-family: Shruti;"><span
+									lang="ar-SA"><span style="font-size: medium;"><span lang="gu-IN"><strong>અરજદારની
+												સહી
+											</strong></span></span> <span style="font-size: medium;"><span
+											lang="gu-IN"><strong>તલાટી કમ મંત્રીની સહી
+											</strong></span></span></span></span>
+						</p>
+						<p style="text-align: center;">&nbsp;</p>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="myform">
+				<div class="container">
+					<div class="row mb-5 pb-5">
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: x-large;"><span
+											lang="gu-IN">પ્રતિ શ્રી </span></span></span></span></p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: x-large;"><span
+											lang="gu-IN">તાલુકા વિકાસ અધિકારી </span></span></span></span></p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: x-large;"><span
+											lang="gu-IN">તા</span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: x-large;">.</span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: x-large;"><span
+											lang="gu-IN">પ</span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: x-large;">.</span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: x-large;"><span
+											lang="gu-IN">કાલાવડ </span></span></span></span></p>
+						<p align="center">&nbsp;</p>
+						<p align="center">&nbsp;</p>
+						<p align="center"><span style="font-family: HARI, serif;"><span
+									style="font-size: x-large;"><u><strong>-:: </strong></u></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: x-large;"><span
+											lang="gu-IN"><strong>બાહેંધરી </strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: x-large;"><strong>::-</strong></span></span></p>
+						<p>&nbsp;</p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN"><strong>હું
+											</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;"><strong>. . . . . . .
+										. .
+										. . . . . . . . . . . . . . . . . . . . . </strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>રેહવાસી </strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;"><strong>.. . . . . .
+										. .
+										. </strong></span></span><span style="font-family: Shruti;"><span
+									lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>ગામ</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;"><strong>,
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN"><strong>તાલુકો કાલાવડ જીલો જામનગર
+												આથી
+												બાહેંધરી આપું છું કે મારા દ્વારા
+												એમ</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: medium;"><strong>.</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>જી નરેગા શાખામાં કરવમાં આવેલ
+											</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;"><strong>. . . . . . .
+										. .
+										. . . . . . . . </strong></span></span><span style="font-family: Shruti;"><span
+									lang="ar-SA"><span style="font-size: medium;"><span lang="gu-IN"><strong>કામની
+												અરજીમાં
+												મારા નામના ૭</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: medium;"><strong>/</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>૧૨ અને ૮</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: medium;"><strong>-</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>અ આપેલ છે જેના ખાતા નબર
+											</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;"><strong>. . . . . . .
+										. .
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN"><strong>સર્વે નબર
+											</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;"><strong>. . . . . . .
+										.
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN"><strong>છે જે મારી માલિકીના છે અને
+												અરજી મુજબની જે જગ્યા બતાવેલ છે તે સત્ય છે મારી માલિકીમાં આવે છે તથા અગાઉ
+												મને
+												લગત અરજી મુજબનો લાભ લીધેલ નથી તથા સરકારી શ્રી ની આ અરજી મુજબની સહાય મેં
+												લીધેલ નથી તથા ભવિષ્યમાં જો સહાય લીધેલ માલુમ પડે તો લગત અરજી મુજબની મળેલ
+												રકમ
+												પરત આપવા બંધાવ છું તથા આ અરજી મુબજની જગ્યા જો સરકારી રેકડ પર મારી માલિકી
+												પુરવાર ન થાય તો લગત લીધેલ સહાય કે લાભની રકમ પરત આપવા બંધાવ છું તથા મેં
+												બતાવેલ જગ્યા સિવાય અન્ય જગ્યા એ મંજુર કરવામાં આવેલ કામ અન્ય જગ્યા કરીશ
+												નહી
+												જેની ખાતરી આપું છું તથા જો એવું ધ્યાનમાં આવે તો હું મળેલ સહાય કે લાભની
+												રકમ
+												પરત આપવા ખાતરી આપું છું </strong></span></span></span></span></p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN"><strong>આથી ઉપરોક્ત બાબતે સ્થળ
+												તપાસ
+												રોજકામમાં લખાવેલ માહિતી સત્ય છે જે હું કોઈના દબાણ કે લાલચ કે લોભમાં
+												આવ્યા
+												વગર આથી નીચે સહી કરી આપુક છું </strong></span></span></span></span></p>
+						<p align="justify">&nbsp;</p>
+						<p align="justify">&nbsp;</p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN"><strong>અરજદારની સહી
+											</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;"><strong>/
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN"><strong>અંગુઠાનું નિસાન
+											</strong></span></span></span></span></p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN"><strong>તારીખ
+											</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;"><strong>:-
+									</strong></span></span></p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span
+											lang="gu-IN"><strong>સ્થળ</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: medium;"><strong>:-</strong></span></span></p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN"><strong>મોબઈલ નબર
+											</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;"><strong>:-
+									</strong></span></span></p>
+						<p align="justify">&nbsp;</p>
+						<p align="center">&nbsp;</p>
+						<p align="center">&nbsp;</p>
+						<p align="center"><br /><br /></p>
+					</div>
+				</div>
+			</section>
+
+			<section class="myform">
+				<div class="container">
+					<div class="row mb-5 pb-5">
+						<p align="center">&nbsp;</p>
+						<p align="center"><span style="font-family: HARI, serif;"><span
+									style="font-size: x-large;"><strong>-::
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: x-large;"><span lang="gu-IN"><strong>ગ્રામ સભા ઠરાવ &ndash;
+												૨૦૨૦</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: x-large;"><strong>-</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: x-large;"><span
+											lang="gu-IN"><strong>૨૦૨૧ </strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: x-large;"><strong>::-</strong></span></span></p>
+						<p style="text-align: right;">&nbsp;</p>
+						<p style="text-align: right;"><span style="font-family: HARI, serif;"><span
+									style="font-size: large;"><strong>. . . . . . . . . . .</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: large;"><span
+											lang="gu-IN"><strong>ગ્રામ પંચાયત </strong></span></span> </span></span></p>
+						<p style="text-align: right;"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: large;"><span lang="gu-IN"><strong>ગ્રામ
+												સભા</strong></span></span>
+									<span style="font-size: large;"><span lang="gu-IN"><strong>તારીખ
+											</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: large;"><strong>:-</strong></span></span></p>
+						<p style="text-align: right;"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: large;"><span lang="gu-IN"><strong>ગ્રામ
+												સભા</strong></span></span>
+									<span style="font-size: large;"><span lang="gu-IN"><strong>સ્થળ
+											</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: large;"><strong>:-
+									</strong></span></span></p>
+						<p style="text-align: right;"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: large;"><span lang="gu-IN"><strong>ગ્રામ સભા સમય
+											</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: large;"><strong>:-</strong></span></span></p>
+						<p style="text-align: right;" align="center">&nbsp;</p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: large;"><span
+											lang="gu-IN"><strong>ઠરાવ નબર </strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: large;"><strong>:-
+									</strong></span></span></p>
+						<p>&nbsp;</p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: large;"><span
+											lang="gu-IN"><strong>મુદા નબર </strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: large;"><strong>:-
+									</strong></span></span><u> </u><u> </u></p>
+						<p align="center">&nbsp;</p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>વિષય </strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;"><strong>:-
+									</strong></span></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN"><strong>મહાત્મા ગાંધી રાષ્ટ્રીય
+												ગ્રામીણ
+												રોજગારી બાહેંધરી અધિનિયમ </strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: medium;"><strong>-</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>૨૦૦૫ </strong></span></span></span></span></p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>અંતર્ગત વર્ષ
+												૨૦૨૦</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: medium;"><strong>-</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>૨૦૨૧ માં વ્યક્તિગત હાથ ધરવાના કામનો ઠરાવ
+											</strong></span></span></span></span></p>
+						<p>&nbsp;</p>
+						<p align="justify">&nbsp;</p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: medium;"><span lang="gu-IN"><strong>આથી આજની ગ્રામ સભા માં
+												સર્વાનુમતે
+												ઠરાવ કરાવામાં આવે છેકે એમ</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: medium;"><strong>.</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>જી</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: medium;"><strong>.</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>નરેગા અંતર્ગત વર્ષ
+												૨૦૨૦</strong></span></span></span></span><span
+								style="font-family: HARI, serif;"><span
+									style="font-size: medium;"><strong>-</strong></span></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>૨૦૨૧ માં હાથ ધરવાના નીચે મુજબના કામો પંચાયતના સેલ્ફ ઓફ
+												પ્રોજેક્ટમાં સમાવેશ કરવામાં આવેલ છે જેમાં વ્યક્તિગત કૃષિ લક્ષી કામો
+												લેવમાં
+												આવેલ
+												છે જેના પ્રાયોરીટી નબર મુજબના કામો હાથ ધરવા તથા આ કામો કરવા માટે આજની
+												ગ્રામ
+												સભા
+												માં સર્વાનુમતે ઠરાવ કરાવામાં આવે છે</strong></span></span></span></span>
+						</p>
+						<center>
+							<table border="1" cellspacing="0" cellpadding="9">
+								<tbody>
+									<tr style="height: 42.1154px;">
+										<td style="width: 42px; height: 42.1154px;">
+											<p align="center"><span style="font-family: Shruti;"><span
+														lang="ar-SA"><span style="font-size: medium;"><span
+																lang="gu-IN"><strong>ક્રમ
+																</strong></span></span></span></span></p>
+										</td>
+										<td style="width: 554.641px; height: 42.1154px;">
+											<p align="center"><span style="font-family: Shruti;"><span
+														lang="ar-SA"><span style="font-size: medium;"><span
+																lang="gu-IN"><strong>કામનું નામ
+																</strong></span></span></span></span></p>
+										</td>
+										<td style="width: 110.359px; height: 42.1154px;">
+											<p align="center"><span style="font-family: Shruti;"><span
+														lang="ar-SA"><span style="font-size: medium;"><span
+																lang="gu-IN"><strong>સર્વે નબર
+																</strong></span></span></span></span></p>
+										</td>
+									</tr>
+									<tr style="height: 56px;">
+										<td style="width: 42px; height: 56px;">
+											<p align="center"><span style="font-family: Shruti;"><span
+														lang="ar-SA"><span style="font-size: large;"><span
+																lang="gu-IN"><strong>૧</strong></span></span></span></span>
+											</p>
+										</td>
+										<td style="width: 554.641px; height: 56px;">
+											<p align="center">&nbsp;</p>
+										</td>
+										<td style="width: 110.359px; height: 56px;">
+											<p align="center">&nbsp;</p>
+										</td>
+									</tr>
+									<tr style="height: 55px;">
+										<td style="width: 42px; height: 55px;">
+											<p align="center">&nbsp;</p>
+										</td>
+										<td style="width: 554.641px; height: 55px;">
+											<p align="center">&nbsp;</p>
+										</td>
+										<td style="width: 110.359px; height: 55px;">
+											<p align="center">&nbsp;</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</center>
+						<p>&nbsp;</p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: large;"><span
+											lang="gu-IN"><strong>અસલ ઉપરથી નકલ</strong></span></span></span></span>
+							<span style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>ઠરાવ સર્વાનુમતે </strong></span></span></span></span>
+						</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p><span style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: medium;"><span
+											lang="gu-IN"><strong>તલાટી કમ મંત્રીની
+												સહી</strong></span></span></span></span>
+						</p>
+						<p>&nbsp;</p>
+					</div>
+				</div>
+			</section>
+			<section class="myform">
+				<div class="container">
+					<div class="row mb-5 pb-5">
+						<p>&nbsp;</p>
+						<p><span style="color: #000000;"><span style="font-family: 'Times New Roman', serif;"><span
+										style="font-size: small;"><strong>ANNEXURE III
+											(B):</strong></span></span></span>
+						</p>
+						<p style="text-align: right;" align="justify"><span style="font-family: HARI, serif;"><span
+									style="font-size: medium;"><u>. . . . . . . . </u></span></span> <span
+								style="font-family: Shruti;"><span lang="ar-SA"><span lang="gu-IN"><strong>ગ્રામ
+											પંચાયત</strong></span> <span style="font-size: medium;"><span
+											lang="gu-IN">કચેરી</span></span> </span></span></p>
+						<p style="text-align: right;" align="justify"><span style="font-family: Shruti;"><span
+									lang="ar-SA"><span lang="gu-IN"><strong>તાલુકો &ndash;
+											કાલાવડ</strong></span></span></span><span
+								style="font-family: HARI, serif;"><strong>, </strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span
+										lang="gu-IN"><strong>જી</strong></span></span></span><span
+								style="font-family: HARI, serif;"><strong>.</strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span lang="gu-IN"><strong>જામનગર
+										</strong></span></span></span></p>
+						<p style="text-align: right;" align="justify"><span style="font-family: Shruti;"><span
+									lang="ar-SA"><span lang="gu-IN"><strong>તારીખ </strong></span></span></span><span
+								style="font-family: HARI, serif;"><strong>:- / / </strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span lang="gu-IN"><strong>૨૦૨૦
+										</strong></span></span></span></p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										lang="gu-IN"><strong>પ્રતિ શ્રી </strong></span></span></span></p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										lang="gu-IN"><strong>તાલુકા વિકાસ અધિકારી સાહેબ </strong></span></span></span>
+						</p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										lang="gu-IN"><strong>એમ</strong></span></span></span><span
+								style="font-family: HARI, serif;"><strong>.</strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span
+										lang="gu-IN"><strong>જી</strong></span></span></span><span
+								style="font-family: HARI, serif;"><strong>.</strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span lang="gu-IN"><strong>નરેગા &ndash;
+											તા</strong></span></span></span><span
+								style="font-family: HARI, serif;"><strong>.</strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span
+										lang="gu-IN"><strong>પ</strong></span></span></span><span
+								style="font-family: HARI, serif;"><strong>.</strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span lang="gu-IN"><strong>કાલાવડ
+										</strong></span></span></span></p>
+						<p align="justify">&nbsp;</p>
+						<p align="justify"><span style="text-decoration: underline;"><span
+									style="font-family: Shruti;"><span lang="ar-SA"><span lang="gu-IN"><strong>વિષય
+											</strong></span></span></span><span
+									style="font-family: HARI, serif;"><strong>:-
+									</strong></span><span style="font-family: Shruti;"><span lang="ar-SA"><span
+											lang="gu-IN"><strong>ઈ મસ્ટર ઇસ્ય્રું
+												કરવા બાબત </strong></span></span></span></span></p>
+						<p align="justify">&nbsp;</p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										lang="gu-IN"><strong>જયભારત સાથ ઉપરોક્ત વિષય અન્વયે જણાવવા નું કે જામનગર જીલ્લા
+											ના
+											કાલાવડ તાલુકાના </strong></span></span></span><span
+								style="font-family: HARI, serif;"><span style="font-size: medium;"><u><strong>. . . . .
+											. .
+											. .
+											.</strong></u></span></span> <span style="font-family: Shruti;"><span
+									lang="ar-SA"><span style="font-size: small;"><span lang="gu-IN"><strong>ગામે
+											</strong></span></span><span
+										lang="gu-IN"><strong>એમ</strong></span></span></span><span
+								style="font-family: HARI, serif;"><strong>.</strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span
+										lang="gu-IN"><strong>જી</strong></span></span></span><span
+								style="font-family: HARI, serif;"><strong>.</strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span lang="gu-IN"><strong>નરેગા યોજના
+											હેઠળ
+											વર્ષ
+										</strong></span><u><span
+											lang="gu-IN"><strong>૨૦૨૦</strong></span></u></span></span><span
+								style="font-family: HARI, serif;"><u><strong>-</strong></u></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span lang="gu-IN"><strong>૨૦૨૧
+										</strong></span>
+									<span lang="gu-IN"><strong>માં </strong></span></span></span><span
+								style="font-family: HARI, serif;"><u><strong>. . . . . . . . . . . . .
+										.</strong></u></span>
+							<span style="font-family: Shruti;"><span lang="ar-SA"><span lang="gu-IN"><strong>ના કામ શરુ
+											કરવા
+											નું
+											હોવાથી તથા લગત અરજદાર ની અરજી મંજુર થયેલ હોવાથી નીચે મુજબની વિગત ઈ મસ્ટર
+											ઇસ્યુ
+											કરી
+											આપવા વીંનતી છે </strong></span></span></span></p>
+						<p align="justify">&nbsp;</p>
+						<table border="1" cellspacing="1" cellpadding="9">
+							<tbody>
+								<tr style="height: 36px;">
+									<td style="height: 36px;" width="21">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														lang="gu-IN"><strong>ક્રમ</strong></span></span></span></p>
+									</td>
+									<td style="height: 36px;" width="116">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														lang="gu-IN"><strong>વિગત</strong></span></span></span></p>
+									</td>
+									<td style="height: 36px;" width="652">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														lang="gu-IN"><strong>કામની વિગત </strong></span></span></span>
+										</p>
+									</td>
+								</tr>
+								<tr style="height: 39.3718px;">
+									<td style="height: 39.3718px;" width="21">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														lang="gu-IN"><strong>૧</strong></span></span></span></p>
+									</td>
+									<td style="height: 39.3718px;" width="116">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="font-size: small;"><span lang="gu-IN"><strong>કામનું નામ
+															</strong></span></span></span></span></p>
+									</td>
+									<td style="height: 39.3718px;" width="652">
+										<p>&nbsp;</p>
+									</td>
+								</tr>
+								<tr style="height: 39px;">
+									<td style="height: 39px;" width="21">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														lang="gu-IN"><strong>૨</strong></span></span></span></p>
+									</td>
+									<td style="height: 39px;" width="116">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="font-size: small;"><span lang="gu-IN"><strong>વર્ક કોડ
+																નબર
+															</strong></span></span></span></span></p>
+									</td>
+									<td style="height: 39px;" width="652">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<p align="justify">&nbsp;</p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: small;"><span lang="gu-IN"><strong>આથી નીચે મુજબના શ્રમિકોએ
+												કામની
+												માંગણી કરેલ છે જોઓં નું જોબ કાર્ડ નિયમોનુસાર ઇસ્યુ કરવામાં આવેલ છે તથા
+												ગ્રામ
+												પંચાત કક્ષાએ જોબકાર્ડ રજીસ્ટર માં નોધ કરેલ છે તથા સામેલ પત્રક મુજબના
+												તમમાં
+												શ્રમિકો ૧૮ વર્ષ થી ઉપરના છે તેમજ ચાલુ નાણાકીય વર્ષ માં ૧૦૦ દિવસ પૂર્ણ
+												કરેલ
+												નથી
+												જેની ખાતરી કરેલ છે તથા આ ડીમાંડ મુજબ લગત કુટુંબ ને મળવા પાત્ર ૧૦૦ દિવસ
+												માટે
+												આપવામાં આવે છે તથા તેઓનું વ્યક્તિગત મંજુર થયેલ કામ પૂર્ણ થાય ત્યાં સુધી
+												અમલમાં
+												રાખવા અને મસ્ટર ઇસ્યુ કરવા માટે આથી આ ડીમાંડ આપવામાં આવે છે તથા અન્ય
+												શ્રમિક
+												કામની માંગણી કરસે તો અલગ થી ડીમાંડ આપવામ આવશે જેથી નીચે મુજબના શ્રમિકો
+												ના ઈ
+												મસ્ટર ઇસ્યુ કરી આપવા વીનતી છે </strong></span></span></span></span></p>
+						<p align="justify">&nbsp;</p>
+						<table border="1" cellspacing="0" cellpadding="9">
+							<tbody>
+								<tr>
+									<td style="background: transparent;" width="12" height="17">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: xx-small;"><span
+																lang="gu-IN"><strong>ક્રમ</strong></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent;" width="183">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: small;"><span
+																lang="gu-IN"><strong>શ્રમિક નું
+																	નામ</strong></span></span></span></span></span></p>
+									</td>
+									<td style="background: transparent;" width="99">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: small;"><span
+																lang="gu-IN"><strong>જોબ કાર્ડ
+																	નબર</strong></span></span></span></span></span></p>
+									</td>
+									<td style="background: transparent;" width="128">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: small;"><span
+																lang="gu-IN"><strong>આધાર કાર્ડ
+																	નબર</strong></span></span></span></span></span></p>
+									</td>
+									<td style="background: transparent;" width="161">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: small;"><span
+																lang="gu-IN"><strong>બેક ખાતા
+																	નબર</strong></span></span></span></span></span></p>
+									</td>
+									<td style="background: transparent;" width="48">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: small;"><span
+																lang="gu-IN"><strong>બેંક</strong></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent;" width="120">
+										<p align="center"><span style="color: #000000;"><span
+													style="font-family: 'Times New Roman', serif;"><strong>IFSC
+														Code</strong></span></span></p>
+									</td>
+								</tr>
+								<tr>
+									<td style="background: transparent;" width="12" height="18">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: medium;"><span
+																lang="gu-IN"><strong>૧</strong></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent;" width="183">
+										<p align="center">&nbsp;</p>
+									</td>
+									<td style="background: transparent;" width="99">
+										<p align="center">&nbsp;</p>
+									</td>
+									<td style="background: transparent;" width="128">
+										<p align="center">&nbsp;</p>
+									</td>
+									<td style="background: transparent;" width="161">
+										<p align="center">&nbsp;</p>
+									</td>
+									<td style="background: transparent;" width="48">
+										<p align="center">&nbsp;</p>
+									</td>
+									<td style="background: transparent;" width="120">
+										<p align="center">&nbsp;</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="background: transparent;" width="12" height="18">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: medium;"><span
+																lang="gu-IN"><strong>૨</strong></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="183">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="99">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="128">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="161">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="48">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="120">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr>
+									<td style="background: transparent;" width="12" height="16">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: medium;"><span
+																lang="gu-IN"><strong>૩</strong></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="183">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="99">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="128">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="161">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="48">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="120">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr>
+									<td style="background: transparent;" width="12" height="17">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: medium;"><span
+																lang="gu-IN"><strong>૪</strong></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="183">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="99">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="128">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="161">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="48">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent;" valign="bottom" width="120">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p align="justify">&nbsp;</p>
+						<p align="justify">&nbsp;</p>
+						<p align="justify">&nbsp;</p>
+						<p align="justify">&nbsp;</p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										style="font-size: small;"><span lang="gu-IN"><strong>ગ્રામ રોજગાર સેવક
+											</strong></span></span></span></span> <span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: small;"><span
+											lang="gu-IN"><strong>સરપંચ શ્રી
+											</strong></span></span></span></span> <span
+								style="font-family: Shruti;"><span lang="ar-SA"><span style="font-size: small;"><span
+											lang="gu-IN"><strong>તલાટી કમ મંત્રી
+											</strong></span></span></span></span></p>
+						<p align="justify">&nbsp;</p>
+						<p align="justify">&nbsp;</p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										lang="gu-IN"><strong>બીડાણ </strong></span></span></span><span
+								style="font-family: HARI, serif;"><strong>:- </strong></span><span
+								style="font-family: Shruti;"><span lang="ar-SA"><span lang="gu-IN"><strong>ઉપરોક્ત
+											શ્રમિકના
+											બેંક
+											ખાતા પાસબુક તથા આધાર કાર્ડ ની નકલ સામેલ છે </strong></span></span></span>
+						</p>
+						<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+										lang="gu-IN"><strong>કચેરી નોધ </strong></span></span></span><span
+								style="font-family: HARI, serif;"><strong>:- </strong></span></p>
+						<p align="justify">&nbsp;</p>
+						<p>&nbsp;</p>
+					</div>
+				</div>
+			</section>
+			<section class="myform">
+				<div class="container">
+					<div class="row mb-5 pb-5">
+						<table border="1" cellspacing="0" cellpadding="9">
+							<tbody>
+								<tr style="height: 29.5128px;">
+									<td style="background: transparent; height: 29.5128px;" colspan="4" width="846">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: x-large;"><span
+																lang="gu-IN"><strong>એમજી</strong></span></span></span></span></span><span
+												style="font-family: HARI, serif;"><span
+													style="font-size: x-large;"><strong>.
+													</strong></span></span><span style="font-family: Shruti;"><span
+													lang="ar-SA"><span style="font-size: x-large;"><span
+															lang="gu-IN"><strong>નરેગા
+															</strong></span></span></span></span><span
+												style="font-family: HARI, serif;"><span
+													style="font-size: x-large;"><strong>-</strong></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="font-size: x-large;"><span lang="gu-IN"><strong>તાલુકા
+																પંચાયત
+																કચેરી </strong></span></span></span></span><span
+												style="font-family: HARI, serif;"><span
+													style="font-size: x-large;"><strong>-
+													</strong></span></span><span style="font-family: Shruti;"><span
+													lang="ar-SA"><span style="font-size: x-large;"><span
+															lang="gu-IN"><strong>કાલાવડ</strong></span></span></span></span>
+											<span style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: x-large;"><strong>-
+														</strong></span></span><span style="font-family: Shruti;"><span
+														lang="ar-SA"><span style="font-size: x-large;"><span
+																lang="gu-IN"><strong>વર્ષ
+																	૨૦૨૦</strong></span></span></span></span><span
+													style="font-family: HARI, serif;"><span
+														style="font-size: x-large;"><strong>-</strong></span></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															style="font-size: x-large;"><span
+																lang="gu-IN"><strong>૨૧</strong></span></span></span></span></span>
+										</p>
+									</td>
+								</tr>
+								<tr style="height: 52px;">
+									<td style="background: transparent; height: 52px;" colspan="4" width="846">
+										<p align="center"><span style="color: #000000;"><span
+													style="font-family: HARI, serif;"><span
+														style="font-size: x-large;"><strong>. . . . . . . . . . . . . .
+															. .
+														</strong></span></span><span style="font-family: Shruti;"><span
+														lang="ar-SA"><span style="font-size: x-large;"><span
+																lang="gu-IN"><strong>ના કામની અરજીનું ચેક
+																	લીસ્ટ</strong></span></span></span></span></span>
+										</p>
+									</td>
+								</tr>
+								<tr style="height: 31px;">
+									<td style="background: transparent; height: 31px;" colspan="4" width="846">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: large;"><span
+																lang="gu-IN"><strong>અરજદાર નું નામ
+																</strong></span></span></span></span></span><span
+												style="font-family: HARI, serif;"><span
+													style="font-size: large;"><strong>:-
+													</strong></span></span><span style="font-family: Shruti;"><span
+													lang="ar-SA"><span style="font-size: large;"><span
+															lang="gu-IN"><strong>અરજદારનું</strong></span></span></span></span>
+											<span style="color: #000000;"><span style="font-family: Shruti;"><span
+														style="font-size: large;"><span
+															lang="gu-IN"><strong>ગામ</strong></span></span></span></span><span
+												style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: large;"><strong>:-</strong></span></span></span>
+										</p>
+									</td>
+								</tr>
+								<tr style="height: 45px;">
+									<td style="background: transparent; height: 45px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: large;"><span
+																lang="gu-IN"><strong>ક્રમ</strong></span></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 45px;" width="396">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: large;"><span
+																lang="gu-IN"><strong>ફોર્મ મુજબ
+																	વિગત</strong></span></span></span></span></span></p>
+									</td>
+									<td style="background: transparent; height: 45px;" width="218">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: large;"><span
+																lang="gu-IN"><strong>અરજુ કરેલ
+																	કાગળ</strong></span></span></span></span></span></p>
+									</td>
+									<td style="background: transparent; height: 45px;" width="147">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: large;"><span
+																lang="gu-IN"><strong>નોધ</strong></span></span></span></span></span>
+										</p>
+									</td>
+								</tr>
+								<tr style="height: 36px;">
+									<td style="background: transparent; height: 36px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૧</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>જોબ</strong></span></span> <span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>કાર્ડ</strong></span></span> <span
+														style="color: #000000;"><span lang="gu-IN"><strong>ની નકલ
+															</strong></span></span></span></span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 36px;">
+									<td style="background: transparent; height: 36px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૨</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>આધાર</strong></span></span> <span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>કાર્ડ</strong></span></span> <span
+														style="color: #000000;"><span lang="gu-IN"><strong> ની નકલ
+															</strong></span></span></span></span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 36px;">
+									<td style="background: transparent; height: 36px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૩</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span lang="gu-IN"><strong>બેંક
+																પાસ</strong></span></span> <span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>બુક</strong></span></span> <span
+														style="color: #000000;"><span lang="gu-IN"><strong>ની નકલ
+															</strong></span></span></span></span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 36px;">
+									<td style="background: transparent; height: 36px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૪</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૮</strong></span></span></span></span><span
+												style="color: #000000;"><span
+													style="font-family: HARI, serif;"><strong>-</strong></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span lang="gu-IN"><strong>અ ની નકલ
+															</strong></span></span> </span></span><span
+												style="color: #000000;"><span
+													style="font-family: HARI, serif;"><strong>(</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>સંયુક્ત ખાતેદાર હોયત તો સહમતી પત્ર
+																હોવું
+																જોઈએ</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>)</strong></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 36px;">
+									<td style="background: transparent; height: 36px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૫</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૭</strong></span></span></span></span><span
+												style="font-family: HARI, serif;"><strong>-</strong></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														lang="gu-IN"><strong>૧૨ ની
+															નકલ </strong></span></span></span><span
+												style="font-family: HARI, serif;"><strong>(</strong></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														lang="gu-IN"><strong>સર્વે</strong></span></span></span> <span
+												style="color: #000000;"><span style="font-family: Shruti;"><span
+														lang="gu-IN"><strong>નબર</strong></span></span></span> <span
+												style="color: #000000;"><span
+													style="font-family: HARI, serif;"><strong>)</strong></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 50px;">
+									<td style="background: transparent; height: 50px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૬</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 50px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>ક્ષેત્ર</strong></span></span> <span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>ફળ</strong></span></span>
+												</span></span><span style="color: #000000;"><span
+													style="font-family: HARI, serif;"><strong>(</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>૨</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>-</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>૦૦</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>-</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>૦૦
+																હે</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>.</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>થી ઓછું વધુ હોયત તો મહિલા
+																વિધવા</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>,</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>અજા</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>,</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>વિકલાંગ નું પ્રમણ પત્ર હોવું
+																જોઈએ</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>)</strong></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 50px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 50px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 50px;">
+									<td style="background: transparent; height: 50px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૭</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 50px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>અરજદારનો</strong></span></span> <span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>પ્રકાર</strong></span></span>
+												</span></span><span style="color: #000000;"><span
+													style="font-family: HARI, serif;"><strong>(</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>નાના
+																ખેડતું</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>, </strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>મહિલા
+																વિધવા</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>, </strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>અ</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>.</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>જા</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>. </strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>અને વિકલાંગ ખાતેદાર હોવા
+																જોઈએ</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>)</strong></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 50px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 50px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 50px;">
+									<td style="background: transparent; height: 50px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૮</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 50px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>પિયતની</strong></span></span> <span
+														style="color: #000000;"><span lang="gu-IN"><strong>સગવળ
+																છે</strong></span></span> </span></span><span
+												style="color: #000000;"><span
+													style="font-family: HARI, serif;"><strong>(
+													</strong></span><span style="font-family: Shruti;"><span
+														lang="ar-SA"><span lang="gu-IN"><strong>૭
+															</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>-</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>૧૨ ના ઉતારામાં હોય તો ૧૬ નબર ની જરૂર
+																નથી ન
+																હોયત
+																તો ૧૬ નબર જોવો </strong></span></span></span></span></p>
+									</td>
+									<td style="background: transparent; height: 50px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 50px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 36px;">
+									<td style="background: transparent; height: 36px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૯</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span lang="gu-IN"><strong>જગ્યા
+																નો</strong></span></span> <span
+														style="color: #000000;"><span lang="gu-IN"><strong>ફોટો સોફ્ટ
+															</strong></span></span></span></span><span
+												style="color: #000000;"><span
+													style="font-family: HARI, serif;"><strong>/
+													</strong></span><span style="font-family: Shruti;"><span
+														lang="ar-SA"><span lang="gu-IN"><strong>હાર્ડ
+																કોપી</strong></span></span></span>
+											</span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 36px;">
+									<td style="background: transparent; height: 36px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૧૦</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span lang="gu-IN"><strong>અરજી
+																ફોર્મ</strong></span></span> <span
+														style="color: #000000;"><span lang="gu-IN"><strong>સંપૂર્ણ ભરેલ
+																છે</strong></span></span>
+												</span></span><span style="color: #000000;"><span
+													style="font-family: HARI, serif;"><strong>(</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>ઠરાવ</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>,</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>રોજકામ</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>,</strong></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															lang="gu-IN"><strong>બાહેંધરી
+																પત્ર</strong></span></span></span><span
+													style="font-family: HARI, serif;"><strong>)</strong></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 36px;">
+									<td style="background: transparent; height: 36px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૧૧</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span lang="gu-IN"><strong>મંજુર
+																કરવા</strong></span></span> <span
+														style="color: #000000;"><span lang="gu-IN"><strong>પત્ર છે
+															</strong></span></span></span></span><span
+												style="color: #000000;"><span
+													style="font-family: HARI, serif;"><strong>{</strong></span></span>
+											<span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span lang="gu-IN"><strong>હા
+															</strong></span></span></span></span><span
+												style="font-family: HARI, serif;"><strong>/ </strong></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														lang="gu-IN"><strong>ના
+														</strong></span></span></span><span
+												style="color: #000000;"><span
+													style="font-family: HARI, serif;"><strong>}</strong></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 36px;">
+									<td style="background: transparent; height: 36px;" width="31">
+										<p align="center"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>૧૨</strong></span></span></span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="396">
+										<p><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span lang="gu-IN"><strong>જો ના
+																તો</strong></span></span> <span
+														style="color: #000000;"><span
+															lang="gu-IN"><strong>કારણ</strong></span></span>
+												</span></span>
+										</p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="218">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+									<td style="background: transparent; height: 36px;" width="147">
+										<p><span style="color: #000000;">&nbsp;</span></p>
+									</td>
+								</tr>
+								<tr style="height: 138px;">
+									<td style="background: transparent; height: 138px;" colspan="4" valign="top"
+										width="846">
+										<p align="justify">&nbsp;</p>
+										<p align="justify"><span style="color: #000000;"> <span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															style="font-size: medium;"><span
+																lang="gu-IN"><strong>ઉપરોક્ત
+																	અરજદર
+																	મારા સેજા </strong></span></span></span></span><span
+													style="font-family: HARI, serif;"><span
+														style="font-size: medium;"><strong>.
+															. . . . . . . . . . . .</strong></span></span></span> <span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: medium;"><span
+																lang="gu-IN"><strong>ના
+																</strong></span></span></span></span></span><span
+												style="font-family: HARI, serif;"><span
+													style="font-size: medium;"><strong>.
+														. .
+														. . . .. . . . . . . . .</strong></span></span><span
+												style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: medium;"><strong> .
+														</strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: medium;"><span
+																lang="gu-IN"><strong>ગામના અરજદાર
+																	છે જેના અરજી નબર
+																</strong></span></span></span></span></span><span
+												style="font-family: HARI, serif;"><span
+													style="font-size: medium;"><strong>.
+														.
+														.</strong></span></span><span style="color: #000000;"><span
+													style="font-family: HARI, serif;"><span
+														style="font-size: medium;"><strong>
+															. . . </strong></span></span></span><span
+												style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><span style="font-size: medium;"><span
+																lang="gu-IN"><strong>છે ઉરોક્ત અરજી મારા
+																	દ્વારા</strong></span></span></span> <span
+														style="color: #000000;"><span style="font-size: medium;"><span
+																lang="gu-IN"><strong>સંપૂર્ણ ચકાસણી કરવમાં આવી છે જેથી
+																	લગત
+																	અરજી
+																</strong></span></span></span><span
+														style="color: #000000;"><u><span
+																style="font-size: medium;"><span
+																	lang="gu-IN"><strong>મંજુર કરવા
+																	</strong></span></span></u></span></span></span><span
+												style="color: #000000;"><span style="font-family: HARI, serif;"><span
+														style="font-size: medium;"><u><strong>/
+															</strong></u></span></span><span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															style="font-size: medium;"><span lang="gu-IN"><strong>ના
+																	મંજુર</strong></span></span></span></span><span
+													style="font-family: Shruti;"><span style="font-size: medium;"><span
+															lang="gu-IN"><strong> કરવા આથી</strong></span></span></span>
+												<span style="font-family: Shruti;"><span
+														style="font-size: medium;"><span lang="gu-IN"><strong>પ્રમાણ
+																પત્ર આપવામાં આવે
+																છે</strong></span></span></span> </span></p>
+										<p align="justify"><span style="font-family: Shruti;"><span lang="ar-SA"><span
+														style="color: #000000;"><u><span
+																style="font-size: medium;"><span
+																	lang="gu-IN"><strong>ગ્રામ રોજગાર સેવકનો અભીપ્રાય
+																	</strong></span></span></u></span></span></span><span
+												style="font-family: HARI, serif;"><span
+													style="font-size: medium;"><strong>:-
+													</strong></span></span></p>
+										<p align="justify">&nbsp;</p>
+										<p align="justify"><span style="color: #000000;"> <span
+													style="font-family: Shruti;"><span lang="ar-SA"><span
+															style="font-size: medium;"><span lang="gu-IN"><strong>ગ્રામ
+																	રોજગાર
+																	સેવક </strong></span></span></span></span></span>
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<a href="#" onclick="printDiv('printdiv')" class="btn btn-secondary">PRINT</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<address>
+								<p>143 castle road 517</p>
+								<p class="mb-4">district, kiyev port south Canada</p>
+								<div class="d-flex align-items-center">
+									<p class="mr-4 mb-0">+3 123 456 789</p>
+									<a href="mailto:info@yourmail.com" class="footer-link">info@yourmail.com</a>
+								</div>
+								<div class="d-flex align-items-center">
+									<p class="mr-4 mb-0">+1 222 345 342</p>
+									<a href="mailto:Marshmallow@yourmail.com"
+										class="footer-link">Marshmallow@yourmail.com</a>
+								</div>
+							</address>
+							<div class="social-icons">
+								<h6 class="footer-title font-weight-bold">
+									Social Share
+								</h6>
+								<div class="d-flex">
+									<a href="#"><i class="mdi mdi-github-circle"></i></a>
+									<a href="#"><i class="mdi mdi-facebook-box"></i></a>
+									<a href="#"><i class="mdi mdi-twitter"></i></a>
+									<a href="#"><i class="mdi mdi-dribbble"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="row">
+								<div class="col-sm-4">
+									<h6 class="footer-title">Social Share</h6>
+									<ul class="list-footer">
+										<li><a href="#" class="footer-link">Home</a></li>
+										<li><a href="#" class="footer-link">About</a></li>
+										<li><a href="#" class="footer-link">Services</a></li>
+										<li><a href="#" class="footer-link">Portfolio</a></li>
+										<li><a href="#" class="footer-link">Contact</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-4">
+									<h6 class="footer-title">Product</h6>
+									<ul class="list-footer">
+										<li><a href="#" class="footer-link">Digital Marketing</a></li>
+										<li><a href="#" class="footer-link">Web Development</a></li>
+										<li><a href="#" class="footer-link">App Development</a></li>
+										<li><a href="#" class="footer-link">Design</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-4">
+									<h6 class="footer-title">Company</h6>
+									<ul class="list-footer">
+										<li><a href="#" class="footer-link">Partners</a></li>
+										<li><a href="#" class="footer-link">Investors</a></li>
+										<li><a href="#" class="footer-link">Partners</a></li>
+										<li><a href="#" class="footer-link">FAQ</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="d-flex align-items-center">
+							<img src="images/logo.svg" alt="logo" class="mr-3">
+							<p class="mb-0 text-small pt-1">© 2019-2020 <a href="https://www.bootstrapdash.com"
+									class="text-white" target="_blank">BootstrapDash</a>. All rights reserved.</p>
+						</div>
+						<div>
+							<div class="d-flex">
+								<a href="#" class="text-small text-white mx-2 footer-link">Privacy Policy </a>
+								<a href="#" class="text-small text-white mx-2 footer-link">Customer Support </a>
+								<a href="#" class="text-small text-white mx-2 footer-link">Careers </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="vendors/base/vendor.bundle.base.js"></script>
+		<script src="vendors/owl.carousel/js/owl.carousel.js"></script>
+		<script src="vendors/aos/js/aos.js"></script>
+		<script src="vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
+		<script src="js/template.js"></script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+					https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+		<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+		<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+
+		<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+		<!-- <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script> -->
+
+		<!-- Add Firebase products that you want to use -->
+		<!-- <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script> -->
+		<!-- <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="js/content-class.js"></script>
+		<script src="js/google-firebase.js"></script>
+</body>
+
+</html>
